@@ -1,0 +1,135 @@
+	@font-face {
+			font-family: "GothamProRegular";
+			src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+			src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+			url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "GothamProMedium";
+			src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+			src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+			url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "GothamProLight";
+			src: url("../fonts/GothamProLight/GothamProLight.eot");
+			src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+			url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#section1 {
+	background: url(../img/back_mountains.jpg) no-repeat center center;
+	background-size: contain;
+}
+
+#section2 {
+	background: url(../img/back_under.jpg) no-repeat center center;
+	background-size: contain;
+}
+
+#section3 {
+	background: url(../img/back.png) no-repeat center center;
+	background-size: contain;
+}
+
+#section3 .slide:nth-child(3) {
+	background: url(../img/ices3.png) no-repeat center center;
+	background-size: contain;
+}
+
+#section3 .slide:nth-child(2) {
+	background: url(../img/ices2.png) no-repeat center center;
+	background-size: contain;
+}
+
+#section3 .slide:nth-child(1) {
+	background: url(../img/ices1.png) no-repeat center center;
+	background-size: contain;
+}
+
+.container {
+	display: grid;
+	/*grid-gap: 0px;
+	grid-template-columns: repeat(14, 1fr);
+	grid-template-rows: 250px 400px 150px;*/
+	width: 1070px;
+	margin: 0 auto;
+	border: 2px solid red;
+	height: 800px;
+}
+
+.header {
+	font: 60px "GothamProRegular"; 
+}
+
+#text1 {
+	color: #0d319c; 
+	margin-top: 120px;
+	margin-left: 70px;
+}
+
+#text2 {
+	color: white;
+	text-align: center;
+	margin-top: 300px;
+}
+
+.content {
+}
+
+.menu {
+	position: absolute;
+	top: 320px;
+	left: 1130px;
+	width: 50px;
+	height: 150px;
+	border: 1px solid green;
+}
+
+.footer {
+	background: url(../img/next.png) no-repeat center;
+	padding: 0;
+	margin-top: 350px;
+	text-align: center;
+}
+
+.text_scroll {
+	font: 20px "GothamProRegular";
+	color: white;
+	margin-top: 130px;
+}
+
+.schema {
+	transform: scale(0.6);
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.current_page {
+	background: url(../img/orange_page_ellipse.png);
+	background-size: cover;
+}
+
+.other_page {
+	background: url(../img/white_page_ellipse.png) no-repeat center center;
+}
