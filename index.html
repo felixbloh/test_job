@@ -3,63 +3,82 @@
 <head>
 	<meta charset="UTF-8">
 	<title>СД2</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/fullpage.css">
+	<link rel="stylesheet" type="text/css" href="css/main2.css">
+	<link rel="stylesheet" type="text/css" href="css/media-queries.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
 <body>
-	<div class="menu">
-		<ul>
-			<li class="current_page"></li>
-			<li class="other_page"></li>
-			<li class="other_page"></li>
-		</ul>
-	</div>
-	<div id="fullpage">
-		<section id="section1">
-		<div class="container">
-			<div class="header" id="text1">Всегда ли цели терапии СД2<br/>на поверхности?</div>
-			<div class="content"></div>
-			<div class="footer">
-				<p class="text_scroll">Листайте вниз</p>
-				<p><img src="img/arrow_down.png" alt="arrow down" id="arr"></p>
-			</div>
+	<div class="wrapper">
+		<div class="pagination">
+			<ul>
+				<li><a href="#section1" class="active"></a></li>
+				<li><a href="#section2"></a></li>
+				<li><a href="#section3"></a></li>
+			</ul>
 		</div>
-		</section>
-		<section id="section2">
-			<div class="container">
-				<div class="header" id="text2">Основа терапии —<br/>патогенез СД2</div>
-				<div>
-					<p class="text_scroll">Листайте вниз</p>
-					<p><img src="img/arrow_down.png" alt="arrow down" id="arr"></p>
+		<div class="next">
+			<p class="text_scroll">Листайте вниз</p>
+			<img src="img/arrow_down.png" alt="вниз" id="arr"/>
+		</div>
+		<div id="fullpage">
+			<section class="section section1" data-section-name="section1">
+				<div class="header">Всегда ли цели терапии СД2<br/>на поверхности?</div>
+				<div class="content">
+		            <div class="text c1">Гипогликемия</div>
+		            <div class="circle c10"></div>
+		            <div class="circle c11"></div>
+		            <div class="circle c12"></div>
+		            <div class="circle c13"></div>
+
+		            <div class="text c2">Осложнения СД</div>
+		            <div class="circle c21"></div>
+		            <div class="circle c22"></div>
+		            <div class="circle c23"></div>
+
+		            <div class="text c3">Цель по HbA1c</div>
+		            <div class="circle c31"></div>
+		            <div class="circle c32"></div>
+		            <div class="circle c33"></div>
+
+		            <div class="text c4">СС риски</div>
+		            <div class="circle c41"></div>
+		            <div class="circle c42"></div>
+		            <div class="circle c43"></div>
+	    		</div>
+			</section>
+			<section class="section section2" data-section-name="section2">
+				<div class="header">Основа терапии —<br/>патогенез СД2</div>
+			</section>
+			<section class="section section3" data-section-name="section3">
+				<div class="slides">
+					<div class="slide" id="slide_2016">
+						<div class="text">Звенья патогенеза СД2</div>
+						<img class="schema pic1" src="img/slide3.png" alt="Звенья патогенеза СД2 2016" id="pic3"/>
+					</div>
+					<div class="slide" id="slide_2009">
+						<div class="text">Смертельный октет</div>
+						<img class="schema pic2" src="img/slide2.png" alt="Смертельный октет 2009" id="pic2"/>
+					</div>
+					<div class="slide" id="slide_1988">
+						<div class="text">Звенья патогенеза СД3</div>
+						<img class="schema pic3" src="img/slide1.png" alt="Звенья патогенеза СД2 1988" id="pic1"/>
+					</div>
+				</div>
+				<div class="slidecontainer">
+	  				<input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+					<div class="slider_positions">
+						<div class="slider_position pos_1988">1988</div>
+						<div class="slider_position pos_2009">2009</div>
+						<div class="slider_position pos_2016">2016</div>
+					</div>
 				</div>
 			</div>
-		</section>
-		<section id="section3">
-		<div class="container">
-			<section class="slide">
-				<div class="container">
-					<img class="schema" src="img/slide3.png" alt="Звенья патогенеза СД2 2016" id="pic3">
-				</div>
-			</section>
-			<section class="slide">
-				<div class="container">
-					<img class="schema" src="img/slide2.png" alt="Смертельный октет 2009" id="pic2">
-				</div>
-			</section>
-			<section class="slide">
-				<div class="container">
-					<img class="schema" src="img/slide1.png" alt="Звенья патогенеза СД2 1988" id="pic1">
-				</div>
 			</section>
 		</div>
-		</section>
 	</div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-	<!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/fullpage.js"></script>
-	<script type="text/javascript" src="js/scrolloverflow.min.js"></script> -->
-	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollify.js"></script>
+	<script src="js/main.js" defer></script>
 </body>
 </html>

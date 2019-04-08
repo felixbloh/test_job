@@ -1,0 +1,31 @@
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	.wrapper {
+		width: 768px; 
+		height: 1024px;
+	}
+
+	.next {
+		bottom: -2%;
+	}
+
+	.pic1 {
+		right: 55%;
+		transform: scale(0.4);
+	}
+
+	.pic2 {
+		left: -35%;
+		transform: scale(0.4);
+	}
+
+	.pic3 {
+		left: -43%;
+		transform: scale(0.3);
+	}
+
+	.slidecontainer {
+	 	top: 90%;
+	}
+}
